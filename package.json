@@ -1,0 +1,26 @@
+{
+  "name": "authentications",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "unit": "npx jest --testPathPattern='.*(?<!\\.e2e)\\.spec\\.js$'",
+    "e2e": "npx jest --testPathPattern='.*\\.e2e\\.spec\\.js$'",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "fastify": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
